@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  .is-active {
+    background-color: gray;
+    color: white;
+    a {
+      cursor: default;
+    }
+  }
+  color: blue;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-link {
+  padding: 1rem;
+}
+
+.logo {
+  padding: 1rem;
+}

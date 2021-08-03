@@ -5,6 +5,7 @@ export default function Drawing(props) {
 
   const [showCode, setShowCode] = useState(false);
 
+  // creating urls from https://trinket.io/turtle to show drawings
   const url = showCode
     ? `${drawURL}?runOption=run&start=result`
     : `${drawURL}?outputOnly=true&runOption=run&start=result`;
@@ -18,11 +19,11 @@ export default function Drawing(props) {
         <iframe
           title="triangle"
           src={url}
-          width={showCode ? "100%" : "940"}
+          width={showCode ? "100%" : "1010"}
           height="950"
           frameborder="0"
-          marginwidth="0"
-          marginheight="0"
+          marginWidth="0"
+          marginHeight="0"
           allowfullscreen
         ></iframe>
       </div>

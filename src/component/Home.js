@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import Header from "./common/Header"
 
 export default function Home() {
   return (
     <div>
+      <Header />
       Home
-      <Link to="/draw">TO DRAW</Link>
     </div>
   );
 }
