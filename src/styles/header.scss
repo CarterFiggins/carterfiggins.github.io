@@ -1,14 +1,14 @@
 .header {
   display: flex;
+  background-color: #344b47;
   justify-content: space-around;
+  align-items: center;
   .is-active {
-    background-color: gray;
-    color: white;
-    a {
-      cursor: default;
-    }
+    color: #e4f9f5;
+    cursor: default;
   }
-  color: blue;
+  color: #7eb6ac;
+  font-size: 1.2rem;
 }
 
 .nav-bar {
@@ -17,9 +17,10 @@
 }
 
 .header-link {
-  padding: 1rem;
+  padding: 2rem 1rem;
+  white-space: nowrap;
 }
 
 .logo {
-  padding: 1rem;
+  height: 3rem;
 }

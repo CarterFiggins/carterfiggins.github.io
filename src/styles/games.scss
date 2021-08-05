@@ -1,0 +1,29 @@
+.game-box {
+  display: flex;
+  margin: 0.5rem;
+  border: black 0.2rem solid;
+  max-width: 27rem;
+  background-color: black;
+  .image {
+    height: 12rem;
+  }
+  .info {
+    padding: 0.5rem;
+    max-width: 15rem;
+  }
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  .discription {
+    padding-top: 0.5rem;
+    color: white;
+  }
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}

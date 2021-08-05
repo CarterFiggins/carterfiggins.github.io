@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <div className="header">
-      <div className="logo">LOGO</div>
+      <img className="logo" src="fig-sage.svg" alt="fig code"></img>
       <div className="nav-bar">
         <NavLink className="header-link" activeClassName="is-active" to="/home">
           Home

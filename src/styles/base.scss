@@ -5,3 +5,8 @@ a:visited,
   text-decoration: none;
   color: inherit;
 }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
