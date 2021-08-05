@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 export default function Header() {
   return (
     <div className="header">
-      <img className="logo" src="fig-sage.svg" alt="fig code"></img>
+      <Logo />
       <div className="nav-bar">
         <NavLink className="header-link" activeClassName="is-active" to="/home">
           Home
@@ -17,9 +18,9 @@ export default function Header() {
         <NavLink
           className="header-link"
           activeClassName="is-active"
-          to="/games"
+          to="/projects"
         >
-          Games
+          Projects
         </NavLink>
         <NavLink
           className="header-link"
