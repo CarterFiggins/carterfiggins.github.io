@@ -12,15 +12,15 @@ export default function Header() {
         <NavLink className="header-link" activeClassName="is-active" to="/work">
           React Work
         </NavLink>
-        <NavLink className="header-link" activeClassName="is-active" to="/draw">
-          Recursive Art
-        </NavLink>
         <NavLink
           className="header-link"
           activeClassName="is-active"
           to="/projects"
         >
           Projects
+        </NavLink>
+        <NavLink className="header-link" activeClassName="is-active" to="/draw">
+          Recursive Art
         </NavLink>
         <NavLink
           className="header-link"

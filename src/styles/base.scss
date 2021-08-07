@@ -6,7 +6,25 @@ a:visited,
   color: inherit;
 }
 
-.content {
+.content-column {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .content-title {
+    font-size: 5rem;
+    margin: 2rem 0 0 0;
+  }
+  .content-subtitle {
+    margin: 0;
+    font-size: 3rem;
+  }
+  .content-body {
+  }
+}
+
+.link-in-list {
+  &:hover {
+    color: blue;
+  }
 }
