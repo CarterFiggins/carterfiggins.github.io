@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
+import Pagination from "./Pagination";
 
 export default function Tabel() {
   const [pageNum, setPageNum] = useState(1);
-  // const [dataType, setDataType] = useState("planets");
   const [starWarsData, setStarWarsData] = useState(null);
 
   useEffect(() => {
@@ -21,6 +21,11 @@ export default function Tabel() {
     return `error: ${starWarsData.detail}`;
   }
 
+  const changePage = (num) => {
+    setStarWarsData(null);
+    setPageNum(num);
+  };
+
   console.log(starWarsData);
   console.log(starWarsData.count / 10 > pageNum);
 
@@ -29,11 +34,10 @@ export default function Tabel() {
 
   return (
     <div>
-      <table>
+      <table className="table-demo">
         <thead>
           <tr>
             <th>Name</th>
-            <th>Birth Year</th>
             <th>Eye Color</th>
             <th>Gender</th>
             <th>Hair Color</th>
@@ -46,7 +50,6 @@ export default function Tabel() {
           {starWarsData.results.map((data, key) => (
             <tr key={key}>
               <td>{data.name}</td>
-              <td>{data.birth_year}</td>
               <td>{data.eye_color}</td>
               <td>{data.gender}</td>
               <td>{data.hair_color}</td>
@@ -57,26 +60,12 @@ export default function Tabel() {
           ))}
         </tbody>
       </table>
-      {pageNum > 1 && (
-        <button
-          onClick={() => {
-            setPageNum(pageNum - 1);
-            setStarWarsData(null);
-          }}
-        >
-          Prev Page
-        </button>
-      )}
-      {numberOfPages > pageNum && (
-        <button
-          onClick={() => {
-            setPageNum(pageNum + 1);
-            setStarWarsData(null);
-          }}
-        >
-          Next Page
-        </button>
-      )}
+
+      <Pagination
+        pageNum={pageNum}
+        numberOfPages={numberOfPages}
+        setPageNum={changePage}
+      />
     </div>
   );
 }

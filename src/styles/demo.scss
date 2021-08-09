@@ -1,0 +1,36 @@
+.show-demo {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.table-demo {
+  border-collapse: collapse;
+  th,
+  td {
+    border: 0.05rem solid black;
+    padding: 0.5rem 1rem;
+  }
+
+  td:first-child {
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      color: #888;
+    }
+    &:active {
+      color: #333;
+    }
+  }
+
+  th {
+    background-color: #344a47;
+    color: #e4f8f5;
+  }
+  tr:nth-child(even) {
+    background-color: #ccc;
+  }
+  tr:nth-child(odd) {
+    background-color: #eee;
+  }
+}

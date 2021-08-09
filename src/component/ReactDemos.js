@@ -1,7 +1,7 @@
 import Header from "./common/Header";
 import Table from "./react-demos/Table";
 
-export default function Work() {
+export default function ReactDemos() {
   return (
     <div>
       <Header />
@@ -9,7 +9,9 @@ export default function Work() {
         <h1 className="content-title">React Demos</h1>
         <p className="content-subtitle">subtitle</p>
       </div>
-      <Table />
+      <div className="show-demo">
+        <Table />
+      </div>
     </div>
   );
 }

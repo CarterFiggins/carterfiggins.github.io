@@ -1,6 +1,6 @@
 import "./styles/index.scss";
 import Home from "./component/Home";
-import Work from "./component/Work";
+import ReactDemos from "./component/ReactDemos";
 import DrawPage from "./component/DrawPage";
 import Projects from "./component/Projects";
 import Learn from "./component/Learn";
@@ -12,8 +12,8 @@ export default function App() {
       <Route path="/home">
         <Home />
       </Route>
-      <Route path="/work">
-        <Work />
+      <Route path="/demos">
+        <ReactDemos />
       </Route>
       <Route path="/projects">
         <Projects />

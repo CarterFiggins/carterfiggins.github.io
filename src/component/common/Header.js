@@ -9,7 +9,11 @@ export default function Header() {
         <NavLink className="header-link" activeClassName="is-active" to="/home">
           Home
         </NavLink>
-        <NavLink className="header-link" activeClassName="is-active" to="/work">
+        <NavLink
+          className="header-link"
+          activeClassName="is-active"
+          to="/demos"
+        >
           React Work
         </NavLink>
         <NavLink
