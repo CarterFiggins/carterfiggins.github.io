@@ -1,21 +1,33 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Logo from "./Logo";
+import Menu from "./Menu";
+import { useLocation } from "react-router-dom";
 
 export default function Header() {
+  const location = useLocation();
+
+  const inDemos = location.pathname.includes("demo");
+
   return (
     <div className="header">
-      <Logo />
+      <NavLink activeClassName="is-active" to="/home">
+        <Logo />
+      </NavLink>
       <div className="nav-bar">
         <NavLink className="header-link" activeClassName="is-active" to="/home">
           Home
         </NavLink>
-        <NavLink
-          className="header-link"
-          activeClassName="is-active"
-          to="/demos"
+        <Menu
+          buttonName="React Demos"
+          menuClass={`header-link ${inDemos && "is-active"}`}
         >
-          React Work
-        </NavLink>
+          <li>
+            <Link to="/demos">Star Wars API</Link>
+          </li>
+          <li>
+            <Link to="/demos">Star Wars API</Link>
+          </li>
+        </Menu>
         <NavLink
           className="header-link"
           activeClassName="is-active"

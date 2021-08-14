@@ -1,0 +1,64 @@
+.menu {
+  position: relative;
+  &.menu-active {
+    overflow: initial;
+    .menu__list {
+      visibility: visible;
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+      li {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+      }
+    }
+  }
+}
+.menu__list {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ccc;
+  border-radius: 5px;
+  box-shadow: none;
+  z-index: 888;
+  margin: 0;
+  transform: scale(0.5);
+  transform-origin: top right;
+  opacity: 0;
+  padding: 8px;
+  transition: all 0.1s ease-in;
+
+  li {
+    opacity: 0;
+    transform: translateX(12px);
+    transition: all 0s ease-in;
+    list-style-type: none;
+    color: $text-color;
+  }
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: $text-color;
+  border: none;
+  background: none;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.menu__button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+}

@@ -1,9 +1,6 @@
-import Header from "./common/Header";
-
 export default function Projects() {
   return (
     <div>
-      <Header />
       <div className="content-column">
         <h1 className="content-title">Projects</h1>
         <p className="content-subtitle">What I have done</p>

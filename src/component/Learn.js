@@ -1,9 +1,6 @@
-import Header from "./common/Header";
-
 export default function Learn() {
   return (
     <div>
-      <Header />
       <div className="content-column">
         <h1 className="content-title">Learning</h1>
         <p className="content-subtitle">Understanding Computing</p>

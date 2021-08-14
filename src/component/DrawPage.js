@@ -1,5 +1,4 @@
 import Drawing from "./Drawing";
-import Header from "./common/Header";
 
 export default function DrawPage() {
   const triangleURL = "https://trinket.io/embed/python/411b16cb81";
@@ -8,7 +7,6 @@ export default function DrawPage() {
 
   return (
     <div>
-      <Header />
       <div className="content-column">
         <h1 className="content-title">Recursive Art</h1>
         <p className="content-subtitle">It is so beautiful</p>

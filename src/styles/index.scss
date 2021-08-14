@@ -1,7 +1,13 @@
-@import "base";
-@import "header";
-@import "drawings";
-@import "home";
-@import "games";
-@import "projects";
-@import "demo";
+// Global
+@import "global/colors";
+
+// Common
+@import "common/base";
+@import "common/header";
+@import "common/menu";
+
+// Components
+@import "components/drawings";
+@import "components/home";
+@import "components/projects";
+@import "components/demo";

@@ -1,10 +1,9 @@
 .header {
   display: flex;
-  background-color: #344b47;
+  background-color: $primary;
   justify-content: space-around;
   align-items: center;
   .is-active {
-    pointer-events: none;
     color: #e4f9f5;
     cursor: default;
   }
