@@ -12,7 +12,14 @@ export default function DrawPage() {
       <div className="content-column">
         <h1 className="content-title">Recursive Art</h1>
         <p className="content-subtitle">It is so beautiful</p>
-        <a href="https://github.com/CarterFiggins/drawings">View Code</a>
+        <a
+          className="link-button"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/CarterFiggins/drawings"
+        >
+          View Code
+        </a>
         <div className="drawing-boxes">
           <Drawing drawURL={treeURL} />
           <Drawing drawURL={spikeURL} />

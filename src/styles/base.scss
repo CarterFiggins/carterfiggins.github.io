@@ -28,3 +28,14 @@ a:visited,
     color: blue;
   }
 }
+
+.link-button {
+  padding: 0.8rem 1rem;
+  background-color: #344b47;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  color: #e4f9f5 !important;
+  &:hover {
+    background-color: #344b47c4;
+  }
+}

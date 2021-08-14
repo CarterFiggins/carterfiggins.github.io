@@ -7,11 +7,18 @@ export default function Projects() {
       <div className="content-column">
         <h1 className="content-title">Projects</h1>
         <p className="content-subtitle">What I have done</p>
-
+        <div className="completed-projects">
+          <ul>
+            <li>Baby Camera</li>
+            <li>Bingo Caller</li>
+            <li>Appliance Stock</li>
+          </ul>
+        </div>
         <div className="planed-projects">
           <div className="planed-title">Project Ideas</div>
           <ul>
             <li>Make a simple discord bot.</li>
+            <li>Wait list for a restaurant</li>
             <li>
               <a
                 href="https://api.nasa.gov/index.html"

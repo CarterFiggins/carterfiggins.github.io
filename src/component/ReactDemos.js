@@ -7,7 +7,7 @@ export default function ReactDemos() {
       <Header />
       <div className="content-column">
         <h1 className="content-title">React Demos</h1>
-        <p className="content-subtitle">subtitle</p>
+        <p className="content-subtitle">Make drop down</p>
       </div>
       <div className="show-demo">
         <Table />
