@@ -4,10 +4,10 @@
   justify-content: space-around;
   align-items: center;
   .is-active {
-    color: #e4f9f5;
+    color: $primary-active;
     cursor: default;
   }
-  color: #7eb6ac;
+  color: $primary-default;
   font-size: 1.2rem;
 }
 

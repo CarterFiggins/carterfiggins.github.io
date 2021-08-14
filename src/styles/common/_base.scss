@@ -25,17 +25,18 @@ a:visited,
 
 .link-in-list {
   &:hover {
+    // Change to better color
     color: blue;
   }
 }
 
 .link-button {
   padding: 0.8rem 1rem;
-  background-color: #344b47;
+  background-color: $primary;
   border-radius: 0.8rem;
   font-weight: bold;
-  color: #e4f9f5 !important;
+  color: $primary-active !important;
   &:hover {
-    background-color: #344b47c4;
+    background-color: $primary-hover;
   }
 }

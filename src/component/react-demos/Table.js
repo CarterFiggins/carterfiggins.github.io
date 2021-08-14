@@ -26,14 +26,10 @@ export default function Tabel() {
     setPageNum(num);
   };
 
-  console.log(starWarsData);
-  console.log(starWarsData.count / 10 > pageNum);
-
   const numberOfPages = Math.ceil(starWarsData.count / 10);
-  console.log(numberOfPages);
 
   return (
-    <div>
+    <div className="table-flex">
       <table className="table-demo">
         <thead>
           <tr>
@@ -63,7 +59,7 @@ export default function Tabel() {
 
       <Pagination
         pageNum={pageNum}
-        numberOfPages={numberOfPages}
+        numberOfPages={numberOfPages || 0}
         setPageNum={changePage}
       />
     </div>

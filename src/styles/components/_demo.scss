@@ -34,3 +34,30 @@
     background-color: #eee;
   }
 }
+
+.table-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination {
+  padding: 0.5rem;
+}
+
+.page-number-button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: $light-text-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.selected {
+  color: $text-color;
+  text-decoration: underline;
+}

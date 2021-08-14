@@ -21,7 +21,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #ccc;
+  background-color: #ddd;
   border-radius: 5px;
   box-shadow: none;
   z-index: 888;
@@ -29,15 +29,21 @@
   transform: scale(0.5);
   transform-origin: top right;
   opacity: 0;
-  padding: 8px;
+  padding: 2px 8px;
   transition: all 0.1s ease-in;
 
   li {
+    display: flex;
+    align-items: center;
+    height: 2rem;
     opacity: 0;
     transform: translateX(12px);
     transition: all 0s ease-in;
     list-style-type: none;
     color: $text-color;
+    &:hover {
+      color: $light-text-color;
+    }
   }
 }
 
