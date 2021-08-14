@@ -6,7 +6,12 @@ a:visited,
   color: inherit;
 }
 
+body {
+  background-color: $primary-default;
+}
+
 .content-column {
+  color: $primary-text;
   display: flex;
   justify-content: center;
   align-items: center;
