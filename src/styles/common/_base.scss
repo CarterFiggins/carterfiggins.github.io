@@ -11,7 +11,7 @@ body {
 }
 
 .content-column {
-  color: $primary-text;
+  color: $primary-light;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,10 +37,10 @@ body {
 
 .link-button {
   padding: 0.8rem 1rem;
-  background-color: $primary;
+  background-color: $primary-dark;
   border-radius: 0.8rem;
   font-weight: bold;
-  color: $primary-active !important;
+  color: $primary-light !important;
   &:hover {
     background-color: $primary-hover;
   }

@@ -13,20 +13,24 @@ export default function DisplayProject(props) {
 
   const info = () => {
     return (
-      <div className={`project-info ${flipped && "project-right"}`}>
+      <div className={`project-info ${flipped ? "project-right" : ""}`}>
         <div className="project-title">{title}</div>
         <div className="project-description">{description}</div>
         <div>
           {siteLink && (
-            <a href={siteLink} target="_blank" rel="noopener noreferrer">
-              View App{" "}
-            </a>
+            <div className="project-link">
+              <a href={siteLink} target="_blank" rel="noopener noreferrer">
+                View App{" "}
+              </a>
+            </div>
           )}
-        </div>
-        <div>
-          <a href={codeLink} target="_blank" rel="noopener noreferrer">
-            github
-          </a>
+          {codeLink && (
+            <div className="project-link">
+              <a href={codeLink} target="_blank" rel="noopener noreferrer">
+                View Source Code
+              </a>
+            </div>
+          )}
         </div>
       </div>
     );

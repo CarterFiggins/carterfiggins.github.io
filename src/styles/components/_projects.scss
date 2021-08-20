@@ -8,28 +8,55 @@
 
 .project {
   display: flex;
-  background-color: $light-text-color;
-  min-width: 46rem;
-  margin-bottom: 2rem;
+  // background-color: $light-text-color;
+  width: 46rem;
+  margin-bottom: 2.5rem;
   .project-info {
-    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $primary-dark;
     color: $primary-default;
     padding: 1rem;
     width: 100%;
+    border-radius: 10px;
   }
   .project-title {
-    color: $primary-text;
+    color: $primary-light;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   .project-description {
+    margin-bottom: 1rem;
   }
   .project-img {
     width: 25rem;
     padding: 1rem;
+    margin: 0 10px;
+    height: 18rem;
+    object-fit: contain;
+    border: $primary-dark 5px solid;
+    border-radius: 10px;
+    background-color: $primary-light;
   }
   .project-center {
     width: 100%;
     display: flex;
+  }
+  .project-link {
+    border: $primary-default 1px solid;
+    text-align: center;
+    margin-top: 1rem;
+    a {
+      padding: 5px 0;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $primary-default;
+      color: $primary-dark;
+    }
   }
 }
 

@@ -1,37 +1,7 @@
 import DisplayProject from "./DisplayProject";
+import { projects } from "../util/projectInfo";
 
 export default function Projects() {
-  const projects = [
-    {
-      title: "Baby Camera",
-      imgSrc: "https://cdn-shop.adafruit.com/categories/105/image(1).png",
-      description: "Keep track of baby with video",
-      codeLink: "https://github.com/CarterFiggins/Baby_Monitor",
-      // siteLink: "",
-    },
-    {
-      title: "Bingo Caller",
-      imgSrc: "/images/bingo.png",
-      description: "Bingo number generator",
-      codeLink: "https://github.com/CarterFiggins/bingo-caller",
-      siteLink: "https://high-stakes-bingo.herokuapp.com/",
-    },
-    {
-      title: "Spotify Silencer",
-      imgSrc: "",
-      description: "",
-      codeLink: "",
-      siteLink: "",
-    },
-    {
-      title: "Spotify Silencer",
-      imgSrc: "",
-      description: "",
-      codeLink: "",
-      siteLink: "",
-    },
-  ];
-
   return (
     <div>
       <div className="content-column">
