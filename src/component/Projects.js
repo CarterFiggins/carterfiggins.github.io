@@ -3,7 +3,7 @@ export default function Projects() {
     <div>
       <div className="content-column">
         <h1 className="content-title">Projects</h1>
-        <p className="content-subtitle">What I have done</p>
+        {/* <p className="content-subtitle">What I have done</p> */}
         <div className="completed-projects">
           <ul>
             <li>Baby Camera</li>
