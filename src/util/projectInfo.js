@@ -6,7 +6,7 @@ export const projects = [
       "The Figlet Monitor is a raspberry pi with a night vision camera. " +
       "It sets up a flask server on the local network that can be accessed " +
       "from the browser. I use a phone goose mount to hold it in place. " +
-      "It is perfect for watching over baby Figlet.",
+      "It is perfect for watching over baby figlet.",
     codeLink: "https://github.com/CarterFiggins/Baby_Monitor",
   },
   {

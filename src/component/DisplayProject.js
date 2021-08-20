@@ -13,7 +13,9 @@ export default function DisplayProject(props) {
 
   const info = () => {
     return (
-      <div className={`project-info ${flipped ? "project-right" : ""}`}>
+      <div
+        className={`project-info ${flipped ? "project-right" : "project-left"}`}
+      >
         <div className="project-title">{title}</div>
         <div className="project-description">{description}</div>
         <div>
