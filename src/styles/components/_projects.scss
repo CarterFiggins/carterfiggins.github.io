@@ -5,3 +5,34 @@
 .planed-title {
   text-align: center;
 }
+
+.project {
+  display: flex;
+  background-color: $light-text-color;
+  min-width: 46rem;
+  margin-bottom: 2rem;
+  .project-info {
+    background-color: $primary;
+    color: $primary-default;
+    padding: 1rem;
+    width: 100%;
+  }
+  .project-title {
+    color: $primary-text;
+    font-size: 1.5rem;
+  }
+  .project-description {
+  }
+  .project-img {
+    width: 25rem;
+    padding: 1rem;
+  }
+  .project-center {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.project-right {
+  width: 100%;
+}
