@@ -19,6 +19,7 @@
     padding: 1rem;
     width: 100%;
     border-radius: 10px;
+    cursor: pointer;
   }
   .project-title {
     color: $primary-light;
@@ -40,6 +41,7 @@
   .project-center {
     width: 100%;
     display: flex;
+    cursor: pointer;
   }
   .project-link {
     border: $primary-default 1px solid;

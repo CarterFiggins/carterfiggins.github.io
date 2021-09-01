@@ -1,10 +1,19 @@
 export default function DisplayProject(props) {
   const { flipped, imgSrc, title, description, codeLink, siteLink } = props;
 
+  const viewApp = (e) => {
+    e.preventDefault();
+    if (siteLink) {
+      window.open(siteLink);
+    } else if (codeLink) {
+      window.open(codeLink);
+    }
+  };
+
   const picture = () => {
     return (
       imgSrc && (
-        <div className="project-center">
+        <div className="project-center" onClick={viewApp}>
           <img className="project-img" alt={title} src={imgSrc} />
         </div>
       )
@@ -15,6 +24,7 @@ export default function DisplayProject(props) {
     return (
       <div
         className={`project-info ${flipped ? "project-right" : "project-left"}`}
+        onClick={viewApp}
       >
         <div className="project-title">{title}</div>
         <div className="project-description">{description}</div>
@@ -22,7 +32,7 @@ export default function DisplayProject(props) {
           {siteLink && (
             <div className="project-link">
               <a href={siteLink} target="_blank" rel="noopener noreferrer">
-                View App{" "}
+                View {title}
               </a>
             </div>
           )}

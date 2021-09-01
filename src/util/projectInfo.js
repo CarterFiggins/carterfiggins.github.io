@@ -1,12 +1,12 @@
 export const projects = [
   {
-    title: "Figlet Monitor",
-    imgSrc: "https://cdn-shop.adafruit.com/categories/105/image(1).png",
+    title: "3D Printing Monitor",
+    imgSrc: "/images/3dMonitor.png",
     description:
-      "The Figlet Monitor is a raspberry pi with a night vision camera. " +
+      "The 3D Printing Monitor is a raspberry pi with a night vision camera. " +
       "It sets up a flask server on the local network that can be accessed " +
-      "from the browser. I use a phone goose mount to hold it in place. " +
-      "It is perfect for watching over baby figlet.",
+      "from the browser. I used a phone goose mount to hold the RPi in place. " +
+      "It is perfect for watching over 3D printing Projects.",
     codeLink: "https://github.com/CarterFiggins/Baby_Monitor",
   },
   {
@@ -22,15 +22,15 @@ export const projects = [
   {
     title: "Spotify Silencer",
     imgSrc: "/images/mute.png",
-    description: "mute spotify ads",
-    codeLink: "",
-    siteLink: "",
+    description:
+      "I love listening to spotify when I code, but the ads can be quite annoying. So the Spotify Silencer is my solution. When an ad starts to play it will mute it and unmute it when the music turns back on. Now I enjoy the sound of silence instead of ads.",
+    codeLink: "https://github.com/CarterFiggins/muteSpotify",
   },
-  {
-    title: "Spotify Silencer",
-    imgSrc: "/images/mute.png",
-    description: "mute spotify ads",
-    codeLink: "",
-    siteLink: "",
-  },
+  // {
+  //   title: "Spotify Silencer",
+  //   imgSrc: "/images/mute.png",
+  //   description: "mute spotify ads",
+  //   codeLink: "",
+  //   siteLink: "",
+  // },
 ];
