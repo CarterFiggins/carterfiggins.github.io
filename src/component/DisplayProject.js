@@ -24,7 +24,6 @@ export default function DisplayProject(props) {
     return (
       <div
         className={`project-info ${flipped ? "project-right" : "project-left"}`}
-        onClick={viewApp}
       >
         <div className="project-title">{title}</div>
         <div className="project-description">{description}</div>

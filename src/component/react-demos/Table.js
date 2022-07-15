@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Pagination from "./Pagination";
+import Loader from "../common/Loader";
 
-export default function Tabel() {
+export default function Table() {
   const [pageNum, setPageNum] = useState(1);
   const [starWarsData, setStarWarsData] = useState(null);
 
@@ -13,20 +14,12 @@ export default function Tabel() {
       });
   }, [pageNum]);
 
-  if (!starWarsData) {
-    return "loading...";
-  }
-
-  if (starWarsData.detail) {
-    return `error: ${starWarsData.detail}`;
-  }
-
   const changePage = (num) => {
     setStarWarsData(null);
     setPageNum(num);
   };
 
-  const numberOfPages = Math.ceil(starWarsData.count / 10);
+  const numberOfPages = Math.ceil((starWarsData?.count ?? 0) / 10);
 
   return (
     <div className="table-flex">
@@ -42,21 +35,23 @@ export default function Tabel() {
             <th>Skin Color</th>
           </tr>
         </thead>
-        <tbody>
-          {starWarsData.results.map((data, key) => (
-            <tr key={key}>
-              <td>{data.name}</td>
-              <td>{data.eye_color}</td>
-              <td>{data.gender}</td>
-              <td>{data.hair_color}</td>
-              <td>{data.height}</td>
-              <td>{data.mass}</td>
-              <td>{data.skin_color}</td>
-            </tr>
-          ))}
-        </tbody>
+        {starWarsData && (
+          <tbody>
+            {starWarsData.results.map((data, key) => (
+              <tr key={key}>
+                <td>{data.name}</td>
+                <td>{data.eye_color}</td>
+                <td>{data.gender}</td>
+                <td>{data.hair_color}</td>
+                <td>{data.height}</td>
+                <td>{data.mass}</td>
+                <td>{data.skin_color}</td>
+              </tr>
+            ))}
+          </tbody>
+        )}
       </table>
-
+      {!starWarsData && <Loader />}
       <Pagination
         pageNum={pageNum}
         numberOfPages={numberOfPages || 0}
