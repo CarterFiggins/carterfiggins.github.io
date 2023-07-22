@@ -1,5 +1,18 @@
 export const projects = [
   {
+    title: "Werewolf Bot",
+    imgSrc: "/images/werewolf.jpg",
+    description: "A Discord bot that is the narrator for the game Werewolf which is a fun social deduction game. Made with Node.js using the Discord.js library. Using mongodb as the database",
+    codeLink: "https://github.com/CarterFiggins/werewolfBot",
+    siteLink: "",
+  },
+  {
+    title: "Food Storage",
+    imgSrc: "/images/meal_plan.png",
+    description: "This web app calculates the total ingredients used from meals in x amount of days. It can let you know what ingredients are about to run out when planing meals for the week. Using React, Node.js, TypeORM, and PostgreSQL.",
+    codeLink: "https://github.com/CarterFiggins/food-plan",
+  },
+  {
     title: "3D Printing Monitor",
     imgSrc: "/images/3dMonitor.png",
     description:
@@ -15,9 +28,8 @@ export const projects = [
     description:
       "High stakes bingo! This app generates bingo numbers with a push of a " +
       "button. It orders the results in a table and shows the last 5 numbers " +
-      "called. Using heroku to host the app go try it out :)",
+      "called.",
     codeLink: "https://github.com/CarterFiggins/bingo-caller",
-    siteLink: "https://high-stakes-bingo.herokuapp.com/",
   },
   {
     title: "Spotify Silencer",

@@ -22,9 +22,15 @@ body {
   }
   .content-subtitle {
     margin: 0;
+    padding-bottom: 1rem;
     font-size: 3rem;
   }
   .content-body {
+    margin: 0;
+    font-size: 2rem;
+    padding: 0 2rem 1rem 2rem;
+    width: 70%;
+    text-align: center;
   }
 }
 
@@ -44,6 +50,10 @@ body {
   &:hover {
     background-color: $primary-hover;
   }
+}
+
+.link-in-text {
+  text-decoration: underline;
 }
 
 .padding-bot {

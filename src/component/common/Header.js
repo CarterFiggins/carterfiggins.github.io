@@ -18,14 +18,11 @@ export default function Header() {
           Home
         </NavLink>
         <Menu
-          buttonName="React Demos"
+          buttonName="API Demos"
           menuClass={`header-link ${inDemos && "is-active"}`}
         >
           <li>
-            <Link to="/demos/table">SWAPI Table</Link>
-          </li>
-          <li>
-            <Link to="/demos/wether">NASA Wether Report</Link>
+            <Link to="/demos/table">Star Wars API</Link>
           </li>
         </Menu>
         <NavLink
@@ -37,13 +34,6 @@ export default function Header() {
         </NavLink>
         <NavLink className="header-link" activeClassName="is-active" to="/draw">
           Recursive Art
-        </NavLink>
-        <NavLink
-          className="header-link"
-          activeClassName="is-active"
-          to="/learn"
-        >
-          Code Learning?
         </NavLink>
       </div>
     </div>

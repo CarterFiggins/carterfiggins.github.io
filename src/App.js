@@ -4,7 +4,6 @@ import ReactDemos from "./component/ReactDemos";
 import DrawPage from "./component/DrawPage";
 import Projects from "./component/Projects";
 import Learn from "./component/Learn";
-import Table from "./component/react-demos/Table";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Header from "./component/common/Header";
 
@@ -18,20 +17,12 @@ export default function App() {
         </Route>
         <Route path="/demos">
           <ReactDemos />
-          <div className="show-demo">
-            <Route path="/demos/table">
-              <Table />
-            </Route>
-          </div>
         </Route>
         <Route path="/projects">
           <Projects />
         </Route>
         <Route path="/draw">
           <DrawPage />
-        </Route>
-        <Route path="/learn">
-          <Learn />
         </Route>
         <Route path="/">
           <Redirect to={"/home"} />

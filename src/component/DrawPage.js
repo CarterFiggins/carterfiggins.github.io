@@ -9,6 +9,18 @@ export default function DrawPage() {
     <div>
       <div className="content-column">
         <h1 className="content-title">Recursive Art</h1>
+        <p className="content-body">
+          Using the{" "}
+          <a
+            className="link-in-text"
+            href="https://docs.python.org/3/library/turtle.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Python Turtle
+          </a>{" "}
+          library to draw the art below.
+        </p>
         <a
           className="link-button"
           target="_blank"
