@@ -9,7 +9,7 @@ export default function DrawPage() {
     <div>
       <div className="content-column">
         <h1 className="content-title">Recursive Art</h1>
-        <p className="content-body">
+        <p className="content-subtitle-sm">
           Using the{" "}
           <a
             className="link-in-text"

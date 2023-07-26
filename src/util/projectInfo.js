@@ -7,9 +7,16 @@ export const projects = [
     siteLink: "",
   },
   {
+    title: "MTB 5 Day Forecast",
+    imgSrc: "/images/mtb_forecast.png",
+    description: "Helps you find the perfect day and time to go mountain biking. Shows the temp, weather, and wind with easy color scheme. All green means it is a perfect time to go biking.",
+    codeLink: "https://github.com/CarterFiggins/MTB_Forecast",
+    siteLink: "",
+  },
+  {
     title: "Food Storage",
     imgSrc: "/images/meal_plan.png",
-    description: "This web app calculates the total ingredients used from meals in x amount of days. It can let you know what ingredients are about to run out when planing meals for the week. Using React, Node.js, TypeORM, and PostgreSQL.",
+    description: "This web app calculates the total ingredients used from meals in x amount of days. It can let you know what ingredients are about to run out when planing meals for the week. Using React, Node.js, Typescript, TypeORM, and PostgreSQL.",
     codeLink: "https://github.com/CarterFiggins/food-plan",
   },
   {
