@@ -12,9 +12,6 @@ export default function App() {
     <div>
       <Header />
       <Switch>
-        <Route path="/home">
-          <Home />
-        </Route>
         <Route path="/demos">
           <ReactDemos />
         </Route>
@@ -25,7 +22,7 @@ export default function App() {
           <DrawPage />
         </Route>
         <Route path="/">
-          <Redirect to={"/home"} />
+          <Home />
         </Route>
       </Switch>
     </div>
