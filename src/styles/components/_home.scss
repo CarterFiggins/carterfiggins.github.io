@@ -2,5 +2,16 @@
   width: 25rem;
   height: 25rem;
   padding: 1rem;
+
+  @media screen and (max-width: 600px) {
+    width: 20rem;
+    height: 20rem;
+  }
+  @media screen and (max-width: 500px) {
+    width: 15rem;
+    height: 15rem;
+  }
+
 }
+
 

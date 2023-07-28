@@ -19,11 +19,19 @@ body {
   .content-title {
     font-size: 5rem;
     margin: 2rem 0 0 0;
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+      font-size: 3rem;
+    }
   }
   .content-subtitle {
     margin: 0;
     padding-bottom: 1rem;
     font-size: 3rem;
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+      font-size: 1.8rem;
+    }
   }
   .content-subtitle-sm {
     margin: 0;
@@ -31,13 +39,24 @@ body {
     padding: 0 2rem 1rem 2rem;
     width: 70%;
     text-align: center;
+    @media screen and (max-width: 1000px) {
+      font-size: 1.4rem;
+    }
   }
   .content-body {
     display: flex;
-    padding: 2rem;
+    padding: 0 2rem;
     &__text {
       font-size: 1.5rem;
       text-align: center;
+      @media screen and (max-width: 1000px) {
+        font-size: 1.2rem;
+      }
+    }
+    @media screen and (max-width: 1500px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
