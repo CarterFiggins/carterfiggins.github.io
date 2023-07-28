@@ -1,5 +1,5 @@
 export default function DisplayProject(props) {
-  const { flipped, imgSrc, title, description, codeLink, siteLink } = props;
+  const { imgSrc, title, description, codeLink, siteLink } = props;
 
   const viewApp = (e) => {
     e.preventDefault();
@@ -22,9 +22,7 @@ export default function DisplayProject(props) {
 
   const info = () => {
     return (
-      <div
-        className={`project-info ${flipped ? "project-right" : "project-left"}`}
-      >
+      <div className="project-info">
         <div className="project-title">{title}</div>
         <div className="project-description">{description}</div>
         <div>
@@ -49,8 +47,8 @@ export default function DisplayProject(props) {
 
   return (
     <div className="project">
-      {flipped ? picture() : info()}
-      {flipped ? info() : picture()}
+      {picture()}
+      {info()}
     </div>
   );
 }

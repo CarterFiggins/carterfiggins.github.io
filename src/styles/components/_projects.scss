@@ -6,10 +6,40 @@
   text-align: center;
 }
 
+.flip {
+  >div:nth-child(odd) {
+    flex-direction: row-reverse;
+    >div:first-child {
+      margin-left: 1rem;
+    }
+  }
+  >div:nth-child(even) {
+    >div:first-child {
+      margin-right: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 785px) {
+    >div:nth-child(odd) {
+      flex-direction: column;
+      >div:first-child {
+        margin-left: 0;
+      }
+    }
+    >div:nth-child(even) {
+      flex-direction: column;
+      >div:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .project {
   display: flex;
-  width: 46rem;
+  max-width: 59rem;
   margin-bottom: 2.5rem;
+
   .project-info {
     display: flex;
     flex-direction: column;
@@ -17,30 +47,51 @@
     background-color: $primary-dark;
     color: $primary-default;
     padding: 1rem;
-    width: 100%;
     border-radius: 10px;
+
+    @media screen and (max-width: 785px) {
+      max-width: 20.6rem;
+    }
   }
   .project-title {
     color: $primary-light;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    @media screen and (max-width: 785px) {
+      font-size: 1.5rem;
+    }
   }
   .project-description {
     margin-bottom: 1rem;
+    font-size: 1.35rem;
   }
   .project-img {
-    width: 25rem;
+    max-width: 26.45rem;
     padding: 1rem;
-    height: 18rem;
+    max-height: 26.45rem;
     object-fit: contain;
     border: $primary-dark 5px solid;
     border-radius: 10px;
     background-color: $primary-light;
+
+    @media screen and (max-width: 1000px) {
+      max-width: 20rem;
+      max-height: 20rem;
+    }
+
+    @media screen and (max-width: 390px) {
+      max-width: 16rem;
+      max-height: 16rem;
+    }
   }
   .project-center {
-    width: 100%;
     display: flex;
     cursor: pointer;
+
+    @media screen and (max-width: 785px) {
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
   }
   .project-link {
     border: $primary-default 1px solid;
@@ -57,13 +108,8 @@
       color: $primary-dark;
     }
   }
-}
 
-.project-right {
-  width: 100%;
-  margin-left: 1rem;
-}
-
-.project-left {
-  margin-right: 1rem;
+  @media screen and (max-width: 1000px) {
+    padding: 0 1rem;
+  }
 }
