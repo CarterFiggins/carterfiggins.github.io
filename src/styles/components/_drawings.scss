@@ -4,6 +4,27 @@
 }
 
 .drawing-iframe {
+  display: flex;
+  justify-content: center;
   width: 64rem;
   height: 60rem;
+  padding-bottom: 1rem;
+  overflow: auto;
+  @media screen and (max-width: 1150px) {
+    width: 50rem;
+    max-height: 48rem;
+  }
+  @media screen and (max-width: 925px) {
+    width: 40rem;
+    max-height: 39rem;
+  }
+  @media screen and (max-width: 715px) {
+    width: 30rem;
+    max-height: 30rem;
+  }
+  @media screen and (max-width: 525px) {
+    width: 20rem;
+    max-height: 20rem;
+  }
+  
 }

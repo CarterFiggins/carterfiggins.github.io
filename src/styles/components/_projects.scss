@@ -66,7 +66,7 @@
     font-size: 1.35rem;
   }
   .project-img {
-    max-width: 26.45rem;
+    width: 26.45rem;
     padding: 1rem;
     max-height: 26.45rem;
     object-fit: contain;
@@ -75,12 +75,12 @@
     background-color: $primary-light;
 
     @media screen and (max-width: 1000px) {
-      max-width: 20rem;
+      width: 20rem;
       max-height: 20rem;
     }
 
     @media screen and (max-width: 390px) {
-      max-width: 16rem;
+      width: 16rem;
       max-height: 16rem;
     }
   }

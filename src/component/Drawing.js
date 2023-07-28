@@ -8,12 +8,14 @@ export default function Drawing(props) {
     <div>
       <div className="drawing">
         <iframe
-          title="triangle"
           src={url}
           className="drawing-iframe"
+          width="100%"
+          height="200"
           frameBorder="0"
           marginWidth="0"
           marginHeight="0"
+          allowfullscreen
         ></iframe>
       </div>
     </div>
