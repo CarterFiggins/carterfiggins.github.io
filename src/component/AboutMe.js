@@ -1,4 +1,4 @@
-export default function Home() {
+export default function AboutMe() {
   return (
     <div className="content-column">
       <h1 className="content-title">Carter Figgins</h1>
@@ -23,7 +23,7 @@ export default function Home() {
             So, brave rebels, join me on this epic journey. Together, we shall bring balance to the digital force, one line of code at a time! <b>May the code be with you!</b>⚡
           </p>
         </div>
-        <img className="home-img" alt={"me"} src={"/images/carter_jedi.png"} />
+        <img className="about-me-img" alt={"me"} src={"/images/carter_jedi.png"} />
       </div>
       <p>*Image and text enhanced by AI</p>
     </div>

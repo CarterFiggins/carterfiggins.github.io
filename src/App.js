@@ -1,5 +1,5 @@
 import "./styles/index.scss";
-import Home from "./component/Home";
+import AboutMe from "./component/AboutMe";
 import ReactDemos from "./component/ReactDemos";
 import DrawPage from "./component/DrawPage";
 import Projects from "./component/Projects";
@@ -12,8 +12,8 @@ export default function App() {
     <div>
       <Header />
       <Switch>
-        <Route path="/home">
-          <Home />
+        <Route path="/about-me">
+          <AboutMe />
         </Route>
         <Route path="/demos">
           <ReactDemos />

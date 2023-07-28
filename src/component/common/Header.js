@@ -10,12 +10,12 @@ export default function Header() {
 
   return (
     <div className="header">
-      <NavLink activeClassName="is-active" to="/home">
+      <NavLink activeClassName="is-active" to="/about-me">
         <Logo />
       </NavLink>
       <div className="nav-bar">
-        <NavLink className="header-link" activeClassName="is-active" to="/home">
-          Home
+        <NavLink className="header-link" activeClassName="is-active" to="/about-me">
+          About Me
         </NavLink>
         <Menu
           buttonName="API Demos"
