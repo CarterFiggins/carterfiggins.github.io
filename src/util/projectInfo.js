@@ -4,7 +4,7 @@ export const projects = [
     imgSrc: "/images/werewolf.jpg",
     description: "A Discord bot that is the narrator for the game Werewolf which is a fun social deduction game. Made with Node.js using the Discord.js library. Using mongodb as the database",
     codeLink: "https://github.com/CarterFiggins/werewolfBot",
-    siteLink: "",
+    siteLink: "https://discord.gg/NcZU9bQhJZ",
   },
   {
     title: "MTB 5 Day Forecast",

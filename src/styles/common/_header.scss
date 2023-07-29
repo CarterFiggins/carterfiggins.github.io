@@ -20,6 +20,7 @@
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   @media screen and (max-width: 700px) {
     flex-wrap: wrap;
   }
@@ -36,4 +37,10 @@
 .logo {
   height: 3rem;
   min-width: 9rem;
+}
+
+.sm-logo{
+  height: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
 }
