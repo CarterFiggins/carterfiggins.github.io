@@ -44,9 +44,9 @@ body {
   }
   .content-body {
     display: flex;
-    padding: 0 2rem;
     &__text {
       font-size: 1.5rem;
+      padding: 0 2rem;
 
       @media screen and (max-width: 1000px) {
         font-size: 1.2rem;
