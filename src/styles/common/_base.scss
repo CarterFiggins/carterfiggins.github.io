@@ -37,7 +37,6 @@ body {
     margin: 0;
     font-size: 1.8em;
     padding: 0 2rem 1rem 2rem;
-    width: 70%;
     text-align: center;
     @media screen and (max-width: 1000px) {
       font-size: 1.4rem;
@@ -48,11 +47,14 @@ body {
     padding: 0 2rem;
     &__text {
       font-size: 1.5rem;
-      text-align: center;
+
       @media screen and (max-width: 1000px) {
         font-size: 1.2rem;
       }
     }
+
+    transition: margin-right 2s 1s;
+
     @media screen and (max-width: 1500px) {
       flex-direction: column-reverse;
       justify-content: center;
@@ -86,4 +88,28 @@ body {
 
 .padding-bot {
   padding-bottom: 1rem;
+}
+
+.fade-in {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-from-right {
+  animation: fadeInFromRight ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-from-left {
+  animation: fadeInFromLeft ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-from-top {
+  animation: fadeInFromTop ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }

@@ -28,8 +28,8 @@
   }
 
   th {
-    background-color: #344a47;
-    color: #e4f8f5;
+    background-color: $primary-dark;
+    color: $primary-light;
   }
   tr:nth-child(even) {
     background-color: #ccc;
@@ -53,15 +53,16 @@
   border: none;
   padding: 0.5rem;
   font-size: 1.2rem;
-  color: $light-text-color;
+  color: $primary-light;
+  background-color: $primary-dark;
   cursor: pointer;
 
   &:hover {
-    color: $text-color;
+    color: $primary-default;
   }
 }
 
 .selected {
-  color: $text-color;
+  color: $primary-default;
   text-decoration: underline;
 }

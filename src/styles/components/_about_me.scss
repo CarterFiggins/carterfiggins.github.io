@@ -1,7 +1,6 @@
 .about-me-img{
   width: 25rem;
   height: 25rem;
-  padding: 1rem;
 
   @media screen and (max-width: 600px) {
     width: 20rem;
@@ -11,7 +10,39 @@
     width: 15rem;
     height: 15rem;
   }
-
 }
 
 
+.image-container {
+  width: 25rem;
+  height: 25rem;
+  padding: 1rem;
+  @media screen and (max-width: 600px) {
+    width: 20rem;
+    height: 20rem;
+  }
+  @media screen and (max-width: 500px) {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+
+.about-me-body {
+  background-color: $primary-dark;
+}
+
+.about-me-footer {
+  width: 100%;
+  background-color: $primary-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-title {
+  width: 100%;
+  background-color: $primary-default;
+  color: #ffffff;
+  justify-content: center;
+}

@@ -5,12 +5,14 @@ import Loader from "../common/Loader";
 export default function StarWars() {
   const [pageNum, setPageNum] = useState(1);
   const [starWarsData, setStarWarsData] = useState(null);
+  const [numberOfPages, setNumberOfPages] = useState(null);
 
   useEffect(() => {
     fetch(`https://swapi.dev/api/people/?page=${pageNum}`)
       .then((responce) => responce.json())
       .then((data) => {
         setStarWarsData(data);
+        setNumberOfPages(Math.ceil((data?.count ?? 0) / 10));
       });
   }, [pageNum]);
 
@@ -18,8 +20,6 @@ export default function StarWars() {
     setStarWarsData(null);
     setPageNum(num);
   };
-
-  const numberOfPages = Math.ceil((starWarsData?.count ?? 0) / 10);
 
   return (
     <div>
