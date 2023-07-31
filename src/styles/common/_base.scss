@@ -73,12 +73,37 @@ body {
 .link-button {
   padding: 0.8rem 1rem;
   background-color: $primary-dark;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   font-weight: bold;
+
   color: $primary-light !important;
   &:hover {
     background-color: $primary-hover;
   }
+}
+
+.nav-btn {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  border: none;
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 0.4rem;
+  background-color: $primary-dark;
+  font-weight: bold;
+  font-size: inherit;
+  color: $primary-light !important;
+  &:hover {
+    background-color: $primary-hover;
+  }
+  &:disabled {
+    background-color: $primary-disabled;
+    cursor: default;
+  }
+  
+}
+
+.nav-container {
+  
 }
 
 .link-in-text {
