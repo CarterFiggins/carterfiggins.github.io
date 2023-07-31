@@ -3,9 +3,9 @@ import Drawing from "./Drawing";
 
 export default function DrawPage() {
   const [drawIndex, setDrawIndex] = useState(0);
-  const triangleURL = "https://trinket.io/embed/python/411b16cb81";
-  const treeURL = "https://trinket.io/embed/python/04dad69445";
-  const spikeURL = "https://trinket.io/embed/python/998b5c1e8a";
+  const triangleURL = { link: "https://trinket.io/embed/python/411b16cb81", name: "Sierpinski's Triangle" };
+  const treeURL = { link: "https://trinket.io/embed/python/04dad69445", name: "Cherry Tree" };
+  const spikeURL = { link: "https://trinket.io/embed/python/998b5c1e8a", name: "Spikes" };
 
   const drawings = [treeURL, triangleURL, spikeURL];
   const isEndOfDrawings = drawIndex + 1 >= drawings.length;
@@ -55,8 +55,9 @@ export default function DrawPage() {
             Next
           </button>
         </div>
+        <h2>{drawings[drawIndex].name}</h2>
         <div className="drawing-boxes">
-          <Drawing drawURL={drawings[drawIndex]} />
+          <Drawing drawURL={drawings[drawIndex].link} />
         </div>
       </div>
     </div>
