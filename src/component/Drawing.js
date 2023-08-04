@@ -2,7 +2,7 @@ export default function Drawing(props) {
   const { drawURL } = props;
 
   // creating urls from https://trinket.io/turtle to show art
-  const url = `${drawURL}?outputOnly=true&runOption=run&start=result`;
+  const url = `${drawURL}?start=result`;
 
   return (
     <div>

@@ -6,12 +6,16 @@
 .drawing-iframe {
   display: flex;
   justify-content: center;
-  width: 64rem;
+  width: 100rem;
   height: 60rem;
   padding-bottom: 1rem;
   overflow: auto;
+  @media screen and (max-width: 1650px) {
+    width: 70rem;
+    max-height: 60rem;
+  }
   @media screen and (max-width: 1150px) {
-    width: 50rem;
+    width: 60rem;
     max-height: 48rem;
   }
   @media screen and (max-width: 925px) {
