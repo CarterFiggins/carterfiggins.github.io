@@ -11,24 +11,19 @@ export default function DrawPage() {
   const isEndOfDrawings = drawIndex + 1 >= drawings.length;
   const isStartOfDrawings = drawIndex <= 0;
 
-  console.log(drawIndex)
-  console.log(isStartOfDrawings)
-
   return (
     <div>
       <div className="content-column">
         <h1 className="content-title">Recursive Art</h1>
         <p className="content-subtitle-sm">
-          Using the{" "}
-          <a
+          Using the <a
             className="link-in-text"
             href="https://docs.python.org/3/library/turtle.html"
             target="_blank"
             rel="noreferrer"
           >
             Python Turtle
-          </a>{" "}
-          library to draw the art below.
+          </a> library to draw the art below.
         </p>
         
         <div>

@@ -63,7 +63,7 @@
   }
   .project-description {
     margin-bottom: 1rem;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
   .project-img {
     width: 26.45rem;
@@ -76,27 +76,21 @@
 
     transition: all 2s;
 
-    &:hover {
-      width: 40rem;
-      max-height: 40rem;
+    @media screen and (min-width: 1000px) {
+      &:hover {
+        width: 40rem;
+        max-height: 40rem;
+      }
     }
 
     @media screen and (max-width: 1000px) {
       width: 20rem;
       max-height: 20rem;
-      &:hover {
-        width: 25rem;
-        max-height: 25rem;
-      }
     }
 
     @media screen and (max-width: 390px) {
       width: 16rem;
       max-height: 16rem;
-      &:hover {
-        width: 16rem;
-        max-height: 16rem;
-      }
     }
   }
   .project-center {
