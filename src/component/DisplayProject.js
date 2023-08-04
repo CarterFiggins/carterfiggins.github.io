@@ -1,5 +1,5 @@
 export default function DisplayProject(props) {
-  const { imgSrc, title, description, codeLink, siteLink } = props;
+  const { imgSrc, title, description, codeLink, siteLink, needsZoom } = props;
 
   const viewApp = (e) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ export default function DisplayProject(props) {
     return (
       imgSrc && (
         <div className="project-center" onClick={viewApp}>
-          <img className="project-img" alt={title} src={imgSrc} />
+          <img className={`project-img ${needsZoom ? "zoom" : ""}`} alt={title} src={imgSrc} />
         </div>
       )
     );

@@ -12,12 +12,14 @@ export const projects = [
     description: "Helps you find the perfect day and time to go mountain biking. Shows the temp, weather, and wind with easy color scheme. All green means it is a perfect time to go biking.",
     codeLink: "https://github.com/CarterFiggins/MTB_Forecast",
     siteLink: "",
+    needsZoom: true,
   },
   {
     title: "Food Storage",
     imgSrc: "/images/meal_plan.png",
     description: "This web app calculates the total ingredients used from meals in x amount of days. It can let you know what ingredients are about to run out when planing meals for the week. Using React, Node.js, Typescript, TypeORM, and PostgreSQL.",
     codeLink: "https://github.com/CarterFiggins/food-plan",
+    needsZoom: true,
   },
   {
     title: "3D Printing Monitor",
@@ -37,6 +39,7 @@ export const projects = [
       "button. It orders the results in a table and shows the last 5 numbers " +
       "called.",
     codeLink: "https://github.com/CarterFiggins/bingo-caller",
+    needsZoom: true,
   },
   {
     title: "Spotify Silencer",

@@ -25,7 +25,7 @@ export default function App() {
           <DrawPage />
         </Route>
         <Route path="/">
-          <Redirect to={"/projects"} />
+          <Redirect to={"/about-me"} />
         </Route>
       </Switch>
     </div>
