@@ -9,7 +9,7 @@ export default function StarWars() {
 
   useEffect(() => {
     fetch(`https://swapi.dev/api/people/?page=${pageNum}`)
-      .then((responce) => responce.json())
+      .then((response) => response.json())
       .then((data) => {
         setStarWarsData(data);
         setNumberOfPages(Math.ceil((data?.count ?? 0) / 10));

@@ -1,0 +1,25 @@
+.harry-potter-item {
+  color: $primary-light;
+  display: flex;
+  padding: 1.5rem;
+  background-color: $primary-dark;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.harry-potter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-info {
+  padding: 0 1rem;
+  font-size: 1.1rem;
+}
+
+
+.harry-image {
+  width: 15rem;
+  height: 100%;
+}

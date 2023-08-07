@@ -22,7 +22,10 @@ export default function Header() {
           menuClass={`header-link ${inDemos && "is-active"}`}
         >
           <li>
-            <Link to="/demos/table">Star Wars API</Link>
+            <Link to="/demos/star-wars">Star Wars</Link>
+          </li>
+          <li>
+            <Link to="/demos/harry">Harry Potter</Link>
           </li>
         </Menu>
         <NavLink
