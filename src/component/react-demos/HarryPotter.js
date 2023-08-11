@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Loader from "../common/Loader";
 
-export default function StarWars() {
+export default function HarryPotter() {
   const [harryPotterData, setHarryPotterData] = useState(null);
   const [loading, setLoading] = useState(true);
 

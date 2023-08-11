@@ -138,3 +138,8 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+.page-buttons {
+  display: flex;
+  justify-content: center;
+}

@@ -27,6 +27,9 @@ export default function Header() {
           <li>
             <Link to="/demos/harry">Harry Potter</Link>
           </li>
+          <li>
+            <Link to="/demos/pokemon">Pokémon</Link>
+          </li>
         </Menu>
         <NavLink
           className="header-link"
