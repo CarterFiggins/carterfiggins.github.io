@@ -41,8 +41,8 @@ export default function StarWars() {
           </thead>
           {starWarsData && (
             <tbody>
-              {starWarsData.results.map((data, key) => (
-                <tr key={key}>
+              {starWarsData.results.map((data) => (
+                <tr key={data.name}>
                   <td>{data.name}</td>
                   <td>{data.eye_color}</td>
                   <td>{data.gender}</td>

@@ -1,16 +1,16 @@
 export default function PageButtons(props) {
-  const { setPage, nextPage, prevPage } = props;
+  const { setPage, nextPage, prevPage, disabled} = props;
   return (
     <div className="page-buttons">
       <button
-        disabled={!prevPage}
+        disabled={!prevPage || disabled}
         className="nav-btn"
         onClick={() => setPage(prevPage)}
       >
         Prev
       </button>
       <button
-        disabled={!nextPage}
+        disabled={!nextPage || disabled}
         className="nav-btn"
         onClick={() => setPage(nextPage)}
       >
