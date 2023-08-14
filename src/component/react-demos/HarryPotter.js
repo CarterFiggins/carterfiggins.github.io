@@ -17,9 +17,9 @@ export default function HarryPotter() {
   return (
     <div>
       <div className="content-column">
-          <h1 className="content-title">Harry Potter API</h1>
+        <h1 className="content-title">Harry Potter API</h1>
+        {loading && <Loader />}
       </div>
-      {loading && <Loader />}
       <div className="harry-potter-list">
         {harryPotterData?.length && harryPotterData.map((character) => {
           const imageSrc = character.image ? character.image : character.gender === "male" ? "/images/wizard.png" : "/images/witch.png"

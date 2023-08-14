@@ -3,16 +3,13 @@ export default function WizardIntro() {
     <div className="content-body about-me-body">
       <div className="content-body__text fade-in-from-top">
         <p>
-          Hailing from the enchanting corridors of <b><a href="https://www.atomicjolt.com/" target="blank" className="link-in-text">Atomic Jolt</a></b>, I proudly bear the title of a Wizarding Software Developer. 
+          I am a seasoned wizard of the digital realm, casting spells of code and crafting enchanting software as a full stack developer at Hogwarts School of Witchcraft and Wizardry. My journey began as a student under the guidance of the respected <b><a href="https://www.atomicjolt.com/" target="blank" className="link-in-text">Atomic Jolt</a></b>, who also shares their wisdom as a professor at Hogwarts. With a wand fashioned from the essence of <b>JavaScript, Ruby, Python, and Go,</b> I channel the magic of programming languages to bring intricate incantations to life. 
         </p>
         <p>
-          Armed with the arcane languages of <b>Java Scriptius</b>, <b>Ruby Incantatus</b>, <b>Pythonia Mysticus</b>, and the elusive <b>Go Incognitus</b>, I cast spells of code that shape the very fabric of digital realms. 
+          Just as a wizard chooses their spells, I wield the potent tools and frameworks of the trade. <b>React and GraphQL</b> flow through my veins like the very essence of a patronus, while <b>Ruby On Rails and Vue</b> dance to the rhythm of my incantations. The mystical <b>ORM frameworks and PostgreSQL</b> are like the whispers of enchanted creatures guiding me through the intricacies of the digital labyrinth, and <b>Git</b>, a spell of version control, ensures my creations remain unblemished by the sands of time.
         </p>
         <p>
-          Within my enchanted toolkit lie <b>Reactus Lumos</b>, a spell for crafting interactive wonders, the Oracle's gift of <b>GraphQL Divinum</b>, the mystical Rails of <b>Ruby Onus</b>, the crystal-clear visions of <b>Vue Propheticus</b>, and the ancient potions of <b>ORM Alchemicus</b>, all controlled by the mystical power of <b>Gitum Controlus</b>.
-        </p>
-        <p>
-          When not immersed in the wizardry of code, you might find me conjuring new machines, taming the wildest coding challenges, or embarking on thrilling broomstick adventures through mountainous terrain. Amidst these magical pursuits, my greatest joy is found in the company of my enchanting wife and spellbinding children, who are the true treasures of my magical journey.
+          When not immersed in the art of coding, I find solace in the physical world, be it soaring through the digital skies or embarking on daring mountain biking quests. Alongside my cherished wife and magical children, I revel in moments of respite, weaving the threads of family into the rich tapestry of my life. Just as a wizard balances their studies with leisure, I merge the realms of technology and family, forever enchanted by the journey.
         </p>
       </div>
       <div className="image-container fade-in">

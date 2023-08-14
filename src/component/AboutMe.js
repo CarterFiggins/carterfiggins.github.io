@@ -5,7 +5,7 @@ import WizardIntro from "./introductions/WizardIntro";
 
 export default function AboutMe() {
 
-  const [world, setWorld] = useState(PokemonIntro)
+  const [world, setWorld] = useState(StarWarsIntro)
 
   const worldChange = (selectedWorld) => {
     if (selectedWorld.target.value === "star-wars") {
@@ -27,9 +27,9 @@ export default function AboutMe() {
         <p className="content-subtitle-sm">Hello, welcome to my website!</p>
       </div>
       <select className="world-select" name="worlds" id="worlds" onChange={worldChange}>
-        <option value="pokemon">Pokémon</option>
         <option value="star-wars">Star Wars</option>
         <option value="wizard">Harry Potter</option>
+        <option value="pokemon">Pokémon</option>
       </select>
       {world}
       <div className="content-body about-me-footer">
