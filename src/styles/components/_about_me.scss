@@ -56,3 +56,24 @@
   border: none;
   border-radius: 0.1rem;
 }
+
+.world-buttons {
+  padding-bottom: 1rem;
+  button {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    border: none;
+    background-color: $primary-default;
+    color: $primary-dark;
+    &:hover {
+      color: $primary-light;
+      cursor: pointer;
+    }
+  }
+  .selected {
+    color: $primary-light;
+    &:hover {
+      cursor: default;
+    }
+  }
+}

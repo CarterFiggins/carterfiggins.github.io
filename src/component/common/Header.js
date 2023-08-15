@@ -44,8 +44,11 @@ export default function Header() {
         <a href="https://www.linkedin.com/in/carter-figgins-064642139/" target="_blank" className="header-logo-link">
           <img src="/images/In-White.png" className="sm-logo" />
         </a>
-        <a href="https://discord.gg/NcZU9bQhJZ" target="_blank" className="header-logo-link">
+        <a href="https://discord.gg/NcZU9bQhJZ" target="_blank" className="header-logo-link discord-logo">
           <img src="/images/discord-mark-white.png" className="sm-logo" />
+        </a>
+        <a href="https://github.com/CarterFiggins" target="_blank" className="header-logo-link">
+          <img src="/images/github-mark-white.png" className="sm-logo" />
         </a>
       </div>
     </div>

@@ -4,20 +4,13 @@ import { useState } from "react";
 import WizardIntro from "./introductions/WizardIntro";
 
 export default function AboutMe() {
-
-  const [world, setWorld] = useState(StarWarsIntro)
-
-  const worldChange = (selectedWorld) => {
-    if (selectedWorld.target.value === "star-wars") {
-      setWorld(StarWarsIntro)
-    } else if (selectedWorld.target.value === "pokemon") {
-      setWorld(PokemonIntro)
-    } else if (selectedWorld.target.value === "wizard") {
-      setWorld(WizardIntro)
-    }
+  const Worlds = {
+    StarWars: 'starWars',
+    HarryPotter: 'harryPotter',
+    Pokemon: 'pokemon',
   }
 
-
+  const [world, setWorld] = useState({ name: Worlds.StarWars, component: StarWarsIntro })
 
   return (
     <div className="content-column">
@@ -26,12 +19,26 @@ export default function AboutMe() {
         <p className="content-subtitle">The Computing Fig</p>
         <p className="content-subtitle-sm">Hello, welcome to my website!</p>
       </div>
-      <select className="world-select" name="worlds" id="worlds" onChange={worldChange}>
-        <option value="star-wars">Star Wars</option>
-        <option value="wizard">Harry Potter</option>
-        <option value="pokemon">Pokémon</option>
-      </select>
-      {world}
+      <div className="world-buttons">
+        <button
+          className={world.name === Worlds.StarWars ? "selected" : ""}
+          onClick={() => setWorld({ name: Worlds.StarWars, component: StarWarsIntro })}
+        >
+          Star Wars
+        </button>
+        <button
+          className={world.name === Worlds.HarryPotter ? "selected" : ""}
+          onClick={() => setWorld({ name: Worlds.HarryPotter, component: WizardIntro })}
+        >
+          Harry Potter
+        </button>
+        <button className={world.name === Worlds.Pokemon ? "selected" : ""}
+          onClick={() => setWorld({ name: Worlds.Pokemon, component: PokemonIntro })}
+        >
+          Pokémon
+        </button>
+      </div>
+      {world.component()}
       <div className="content-body about-me-footer">
         <p className="fade-in">*Image and text enhanced by AI</p>
       </div>
