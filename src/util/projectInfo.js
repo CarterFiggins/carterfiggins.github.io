@@ -1,5 +1,11 @@
 export const projects = [
   {
+    title: "ZombEvasion Bot",
+    imgSrc: "/images/zomb_evasion.png",
+    description: "Go lang Discord bot for a zombie game! Creates a hex game board that players can move using discord buttons. Play as a zombie or human with discord friends. Humans are tying to escape the zombies by reaching the safe houses and the zombies are trying to infect all humans. ",
+    codeLink: "https://github.com/CarterFiggins/ZombEvasion",
+  },
+  {
     title: "Werewolf Bot",
     imgSrc: "/images/werewolf.jpg",
     description: "A Discord bot that is the narrator for the game Werewolf which is a fun social deduction game. Made with Node.js using the Discord.js library. Using mongodb as the database",

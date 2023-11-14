@@ -39,9 +39,7 @@ export default function AboutMe() {
         </button>
       </div>
       {world.component()}
-      <div className="content-body about-me-footer">
-        <p className="fade-in">*Image and text enhanced by AI</p>
-      </div>
+      <p className="fade-in">*Image and text enhanced by AI</p>
     </div>
   );
 }

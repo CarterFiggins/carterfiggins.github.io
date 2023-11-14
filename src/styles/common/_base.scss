@@ -44,6 +44,7 @@ body {
   }
   .content-body {
     display: flex;
+    padding: 0 2rem 1rem 2rem;
     &__text {
       font-size: 1.5rem;
       padding: 0 2rem;
@@ -51,6 +52,10 @@ body {
       @media screen and (max-width: 1000px) {
         font-size: 1.2rem;
       }
+    }
+
+    p {
+      margin-top: 0;
     }
 
     transition: margin-right 2s 1s;
