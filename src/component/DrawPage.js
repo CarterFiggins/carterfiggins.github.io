@@ -34,14 +34,7 @@ export default function DrawPage() {
           >
             Prev
           </button>
-          <a
-          className="link-button"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/CarterFiggins/drawings"
-        >
-          View Code
-        </a>
+          <h2>{drawings[drawIndex].name}</h2>
           <button
             disabled={isEndOfDrawings}
             className="nav-btn"
@@ -50,7 +43,6 @@ export default function DrawPage() {
             Next
           </button>
         </div>
-        <h2>{drawings[drawIndex].name}</h2>
         <div className="drawing-boxes">
           <Drawing drawURL={drawings[drawIndex].link} />
         </div>
