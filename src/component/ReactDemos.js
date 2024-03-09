@@ -7,9 +7,10 @@ export default function ReactDemos() {
   return (
     <div className="show-demo">
       <Switch>
-        <Route path="/demos/star-wars">
+        {/* The Starwars API has been taken down. :( */}
+        {/* <Route path="/demos/star-wars">
           <StarWars />
-        </Route>
+        </Route> */}
         <Route path="/demos/harry">
           <HarryPotter />
         </Route>
