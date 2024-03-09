@@ -21,9 +21,10 @@ export default function Header() {
           buttonName="API Demos"
           menuClass={`header-link ${inDemos && "is-active"}`}
         >
-          <li>
+           {/* The Starwars API has been taken down. :( */}
+          {/* <li>
             <Link to="/demos/star-wars">Star Wars</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/demos/harry">Harry Potter</Link>
           </li>
