@@ -16,7 +16,6 @@ export default function AboutMe() {
     <div className="content-column">
       <div className="about-me-title">
         <h1 className="content-title">Carter Figgins</h1>
-        <p className="content-subtitle">The Computing Fig</p>
         <p className="content-subtitle-sm">Hello, welcome to my website!</p>
       </div>
       <div className="world-buttons">
