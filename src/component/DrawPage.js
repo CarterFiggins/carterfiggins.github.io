@@ -26,7 +26,7 @@ export default function DrawPage() {
           </a> library to draw the art below.
         </p>
         
-        <div>
+        <div className="drawing-nav">
           <button
             disabled={isStartOfDrawings}
             className="nav-btn"
@@ -43,6 +43,7 @@ export default function DrawPage() {
             Next
           </button>
         </div>
+        
         <div className="drawing-boxes">
           <Drawing drawURL={drawings[drawIndex].link} />
         </div>
