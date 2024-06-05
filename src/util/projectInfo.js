@@ -47,13 +47,6 @@ export const projects = [
     codeLink: "https://github.com/CarterFiggins/bingo-caller",
     needsZoom: true,
   },
-  {
-    title: "Spotify Silencer",
-    imgSrc: "/images/mute.png",
-    description:
-      "I love listening to spotify when I code, but the ads can be quite annoying. So the Spotify Silencer is my solution. When an ad starts to play it will mute it and unmute it when the music turns back on. Now I enjoy the sound of silence instead of ads.",
-    codeLink: "https://github.com/CarterFiggins/muteSpotify",
-  },
   // {
   //   title: "Spotify Silencer",
   //   imgSrc: "/images/mute.png",
