@@ -3,7 +3,7 @@ export default function PokemonIntro() {
     <div className="content-body about-me-body">
       <div className="content-body__text fade-in-from-top">
         <p>
-          Hey there, fellow trainers! I've been on an epic journey as a full-stack developer at <b><a href="https://www.atomicjolt.com/" target="blank" className="link-in-text">Atomic Jolt</a></b> for four years, where I've been crafting tools for Learning Management Systems just like training Pokémon for battle. My coding team consists of powerful creatures like Javascript, Node.js, PostgreSQL, React.js, Go, AWS, Ruby on Rails, and Typescript, each with their own unique moves and strengths, ready to tackle any challenge that comes our way!
+          Hey there, fellow trainers! I've been on an epic journey as a full-stack developer at <b><a href="https://www.atomicjolt.com/" target="blank" className="link-in-text">Atomic Jolt</a></b> for five years, where I've been crafting tools for Learning Management Systems just like training Pokémon for battle. My coding team consists of powerful creatures like Javascript, Node.js, PostgreSQL, React.js, Go, AWS, Ruby on Rails, and Typescript, each with their own unique moves and strengths, ready to tackle any challenge that comes our way!
         </p>
         <p>
           When I'm not mastering the digital battlefield, I love to train Discord bots to play games like Werewolf, giving them the skills they need to outwit and outplay. But my journey doesn't stop there - I'm always on the lookout for new knowledge and techniques in the vast world of computer science, just like discovering new Pokémon species in the tall grass.
