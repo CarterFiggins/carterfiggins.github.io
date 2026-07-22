@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 export default function DisplayProject(props) {
-  const { imgSrc, title, description, codeLink, siteLink, needsZoom } = props;
+  const { imgSrc, title, description, codeLink, siteLink, instructionLink, needsZoom } = props;
 
   const viewApp = (e) => {
     e.preventDefault();
@@ -26,6 +28,11 @@ export default function DisplayProject(props) {
         <div className="project-title">{title}</div>
         <div className="project-description">{description}</div>
         <div>
+          {instructionLink && (
+            <div className="project-link">
+            <Link to={instructionLink}>View Instructions</Link>
+          </div>
+          )}
           {siteLink && (
             <div className="project-link">
               <a href={siteLink} target="_blank" rel="noopener noreferrer">

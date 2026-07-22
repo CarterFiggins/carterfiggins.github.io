@@ -6,6 +6,7 @@ import Projects from "./component/Projects";
 import Learn from "./component/Learn";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Header from "./component/common/Header";
+import WerewolfInstructions from "./component/WerewolfInstructions";
 
 export default function App() {
   return (
@@ -23,6 +24,9 @@ export default function App() {
         </Route>
         <Route path="/draw">
           <DrawPage />
+        </Route>
+        <Route path="/werewolf/instructions">
+          <WerewolfInstructions />
         </Route>
         <Route path="/">
           <Redirect to={"/about-me"} />

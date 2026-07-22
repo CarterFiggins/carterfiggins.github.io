@@ -15,6 +15,7 @@ export default function Projects() {
               description={project.description}
               codeLink={project.codeLink}
               siteLink={project.siteLink}
+              instructionLink={project.instructionLink}
               needsZoom={project.needsZoom}
             />
           ))}

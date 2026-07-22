@@ -1,16 +1,30 @@
 export const projects = [
   {
+    title: "Werewolf Bot",
+    imgSrc: "/images/werewolf.jpg",
+    description: "A Discord bot that is the narrator for the game Werewolf which is a fun social deduction game. Made with Node.js using the Discord.js library. Using mongodb as the database",
+    codeLink: "https://github.com/CarterFiggins/werewolfBot",
+    siteLink: "https://discord.gg/NcZU9bQhJZ",
+    instructionLink: "/werewolf/instructions",
+  },
+  {
+    title: "Verify By Image Bot",
+    imgSrc: "/images/verifyByImage.jpeg",
+    description: "A Discord bot that verifies new members by having an admin review an image they post.",
+    codeLink: "https://github.com/CarterFiggins/VerifyByImage"
+  },
+  {
     title: "ZombEvasion Bot",
     imgSrc: "/images/zomb_evasion.png",
     description: "Go lang Discord bot for a zombie game! Creates a hex game board that players can move using discord buttons. Play as a zombie or human with discord friends. Humans are tying to escape the zombies by reaching the safe houses and the zombies are trying to infect all humans. ",
     codeLink: "https://github.com/CarterFiggins/ZombEvasion",
   },
   {
-    title: "Werewolf Bot",
-    imgSrc: "/images/werewolf.jpg",
-    description: "A Discord bot that is the narrator for the game Werewolf which is a fun social deduction game. Made with Node.js using the Discord.js library. Using mongodb as the database",
-    codeLink: "https://github.com/CarterFiggins/werewolfBot",
-    siteLink: "https://discord.gg/NcZU9bQhJZ",
+    title: "Food Storage",
+    imgSrc: "/images/meal_plan.png",
+    description: "This web app calculates the total ingredients used from meals in x amount of days. It can let you know what ingredients are about to run out when planing meals for the week. Using React, Node.js, Typescript, TypeORM, and PostgreSQL.",
+    codeLink: "https://github.com/CarterFiggins/food-plan",
+    needsZoom: true,
   },
   {
     title: "MTB 5 Day Forecast",
@@ -18,13 +32,6 @@ export const projects = [
     description: "Helps you find the perfect day and time to go mountain biking. Shows the temp, weather, and wind with easy color scheme. All green means it is a perfect time to go biking.",
     codeLink: "https://github.com/CarterFiggins/MTB_Forecast",
     siteLink: "",
-    needsZoom: true,
-  },
-  {
-    title: "Food Storage",
-    imgSrc: "/images/meal_plan.png",
-    description: "This web app calculates the total ingredients used from meals in x amount of days. It can let you know what ingredients are about to run out when planing meals for the week. Using React, Node.js, Typescript, TypeORM, and PostgreSQL.",
-    codeLink: "https://github.com/CarterFiggins/food-plan",
     needsZoom: true,
   },
   {
